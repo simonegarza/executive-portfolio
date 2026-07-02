@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simone Garza — Executive Portfolio</title>
+  <meta name="description" content="Executive portfolio interattivo: Digital Commerce, Business Design, Process Design." />
+  <style>
+    :root{
+      --bg:#f7f8fb; --ink:#0b1020; --muted:#637083; --line:rgba(15,23,42,.12);
+      --card:rgba(255,255,255,.72); --card2:rgba(255,255,255,.52); --blue:#0b5cff; --cyan:#17c3ff;
+      --violet:#7357ff; --green:#17b26a; --amber:#f59e0b; --dark:#07111f;
+      --shadow:0 24px 80px rgba(15,23,42,.12); --radius:28px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:
+      radial-gradient(circle at 16% 8%, rgba(11,92,255,.18), transparent 34%),
+      radial-gradient(circle at 88% 18%, rgba(115,87,255,.16), transparent 33%),
+      radial-gradient(circle at 62% 90%, rgba(23,195,255,.13), transparent 35%);z-index:-2}
+    .noise{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.18;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)' opacity='.38'/%3E%3C/svg%3E")}
+    .nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:50;width:min(1120px,calc(100% - 32px));display:flex;align-items:center;justify-content:space-between;padding:10px 12px 10px 18px;border:1px solid var(--line);background:rgba(255,255,255,.66);backdrop-filter:blur(22px);border-radius:999px;box-shadow:0 10px 35px rgba(15,23,42,.08)}
+    .brand{font-weight:800;letter-spacing:-.03em}.brand span{color:var(--blue)}.nav a{color:#1f2937;text-decoration:none;font-size:13px;font-weight:650;margin:0 9px}.nav .cta{background:#0b1020;color:white;padding:9px 14px;border-radius:999px}
+    section{position:relative;padding:110px 24px}.wrap{width:min(1180px,100%);margin:0 auto}.hero{min-height:100vh;display:grid;place-items:center;padding-top:130px;padding-bottom:80px}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:44px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid rgba(11,92,255,.22);background:rgba(255,255,255,.56);padding:9px 12px;border-radius:999px;color:#245071;font-size:13px;font-weight:750}.dot{width:8px;height:8px;background:linear-gradient(135deg,var(--blue),var(--cyan));border-radius:50%;box-shadow:0 0 0 7px rgba(11,92,255,.09)}
+    h1{font-size:clamp(54px,8vw,112px);line-height:.92;letter-spacing:-.075em;margin:22px 0 24px}.grad{background:linear-gradient(100deg,#07111f 10%,#0b5cff 50%,#7357ff 80%);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:clamp(19px,2vw,25px);line-height:1.45;color:#334155;max-width:720px;letter-spacing:-.02em}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:13px 18px;text-decoration:none;font-weight:800;border:1px solid var(--line);color:#111827;background:rgba(255,255,255,.7)}.btn.primary{background:#0b1020;color:white;border-color:#0b1020}.btn:hover{transform:translateY(-2px)}
+    .device{position:relative;min-height:560px;border-radius:42px;padding:18px;background:linear-gradient(145deg,rgba(255,255,255,.9),rgba(255,255,255,.42));border:1px solid rgba(255,255,255,.7);box-shadow:var(--shadow);overflow:hidden}.device:before{content:"";position:absolute;inset:auto -20% -38% -20%;height:62%;background:radial-gradient(circle,rgba(11,92,255,.2),transparent 60%)}
+    .screen{height:100%;min-height:524px;border-radius:30px;background:linear-gradient(180deg,#08111f,#101828);padding:24px;color:white;overflow:hidden;position:relative}.orbit{position:absolute;width:380px;height:380px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-90px;top:-80px;animation:spin 22s linear infinite}.orbit:after{content:"";position:absolute;width:13px;height:13px;background:var(--cyan);border-radius:50%;top:58px;left:80px;box-shadow:0 0 25px var(--cyan)}@keyframes spin{to{transform:rotate(360deg)}}
+    .metric-stack{position:relative;z-index:1;display:grid;gap:14px;margin-top:70px}.mini-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:18px;backdrop-filter:blur(14px)}.mini-card small{color:#9fb4d0;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.mini-card strong{display:block;font-size:34px;margin-top:8px;letter-spacing:-.04em}.bars{display:grid;gap:8px;margin-top:14px}.bar{height:7px;background:rgba(255,255,255,.11);border-radius:999px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:999px;transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:34px}.kicker{font-weight:900;color:var(--blue);letter-spacing:.12em;text-transform:uppercase;font-size:13px}h2{font-size:clamp(38px,5.4vw,76px);line-height:.98;letter-spacing:-.06em;margin:10px 0}.sub{font-size:19px;line-height:1.55;color:var(--muted);max-width:730px}.panel{border:1px solid var(--line);background:var(--card);backdrop-filter:blur(20px);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .index-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.index-card{padding:28px;min-height:250px;position:relative;overflow:hidden}.index-card b{font-size:13px;color:var(--blue)}.index-card h3{font-size:30px;letter-spacing:-.04em;margin:14px 0 10px}.index-card p{color:var(--muted);line-height:1.5}.index-card:after{content:"";position:absolute;right:-30px;bottom:-30px;width:150px;height:150px;border-radius:50%;background:linear-gradient(135deg,rgba(11,92,255,.18),rgba(23,195,255,.12))}
+    .method{display:grid;grid-template-columns:.75fr 1.25fr;gap:24px}.sticky{position:sticky;top:120px;height:max-content}.steps{display:grid;gap:16px}.step{display:grid;grid-template-columns:80px 1fr;gap:20px;padding:24px}.num{font-size:32px;font-weight:900;color:rgba(11,92,255,.28)}.step h3{font-size:25px;margin:0 0 8px;letter-spacing:-.03em}.step p{margin:0;color:var(--muted);line-height:1.55}
+    .timeline{position:relative;padding:26px}.timeline:before{content:"";position:absolute;left:42px;top:34px;bottom:34px;width:2px;background:linear-gradient(var(--blue),var(--cyan))}.tl{position:relative;display:grid;grid-template-columns:120px 1fr;gap:24px;padding:22px 0 22px 56px}.tl:before{content:"";position:absolute;left:8px;top:33px;width:18px;height:18px;background:#fff;border:5px solid var(--blue);border-radius:50%;box-shadow:0 0 0 8px rgba(11,92,255,.08)}.year{font-weight:900;color:var(--blue)}.tl h3{margin:0 0 8px;font-size:25px}.tl p{margin:0;color:var(--muted);line-height:1.55}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.chip{font-size:12px;font-weight:800;color:#24415f;background:#eaf1ff;border:1px solid rgba(11,92,255,.12);padding:7px 10px;border-radius:999px}
+    .kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.kpi{padding:26px}.kpi .value{font-size:clamp(38px,5vw,64px);font-weight:950;letter-spacing:-.07em;color:#0b3f8a}.kpi .label{font-weight:850;margin-top:8px}.kpi p{color:var(--muted);line-height:1.45;margin-bottom:0}
+    .case-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}.tab{border:1px solid var(--line);background:rgba(255,255,255,.68);padding:11px 14px;border-radius:999px;font-weight:850;cursor:pointer}.tab.active{background:#0b1020;color:white}.case{display:none}.case.active{display:grid;grid-template-columns:.95fr 1.05fr;gap:20px}.case-copy{padding:30px}.case-copy h3{font-size:38px;letter-spacing:-.05em;margin:0 0 14px}.case-copy p{color:var(--muted);font-size:17px;line-height:1.58}.case-flow{padding:24px;display:grid;gap:12px;align-content:center}.flow-item{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.6);border:1px solid var(--line);border-radius:18px;padding:15px}.flow-item span{flex:0 0 32px;height:32px;border-radius:10px;background:#0b1020;color:white;display:grid;place-items:center;font-weight:900}.flow-item b{display:block;margin-bottom:3px}.flow-item small{color:var(--muted);line-height:1.45}.chart{height:250px;display:flex;align-items:end;gap:18px;padding:24px;border-radius:24px;background:linear-gradient(180deg,rgba(11,92,255,.06),rgba(255,255,255,.5));border:1px solid var(--line)}.col{flex:1;display:grid;align-items:end;text-align:center;gap:8px;color:#334155;font-weight:800}.col i{height:0;border-radius:12px 12px 4px 4px;background:linear-gradient(180deg,var(--blue),var(--cyan));transition:height 1.5s cubic-bezier(.2,.8,.2,1)}
+    .diagram{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;align-items:center}.node{padding:18px;border-radius:20px;background:rgba(255,255,255,.68);border:1px solid var(--line);text-align:center;font-weight:850;min-height:90px;display:grid;place-items:center}.arrow{text-align:center;font-size:24px;color:var(--blue);font-weight:900}.final{background:#07111f;color:white;border-radius:40px;padding:60px;overflow:hidden;position:relative}.final:before{content:"";position:absolute;inset:-40%;background:radial-gradient(circle at 20% 30%,rgba(11,92,255,.32),transparent 28%),radial-gradient(circle at 80% 20%,rgba(23,195,255,.2),transparent 24%)}.final>*{position:relative}.final h2{color:white}.final p{color:#b9c6d8;font-size:20px;line-height:1.55;max-width:850px}.quote{font-size:clamp(30px,4vw,56px);line-height:1.06;letter-spacing:-.05em;font-weight:900;margin-top:30px}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease, transform .8s ease}.reveal.on{opacity:1;transform:none}
+    @media(max-width:900px){.nav .links{display:none}.hero-grid,.method,.case.active{grid-template-columns:1fr}.index-grid,.kpi-grid{grid-template-columns:1fr}.section-head{display:block}.diagram{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.device{min-height:auto}.screen{min-height:460px}.tl{grid-template-columns:1fr}.final{padding:34px}section{padding:82px 18px}h1{font-size:58px}}
+  </style>
+</head>
+<body>
+<div class="noise"></div>
+<nav class="nav">
+  <div class="brand">Simone <span>Garza</span></div>
+  <div class="links"><a href="#approccio">Approccio</a><a href="#evoluzione">Evoluzione</a><a href="#valore">Valore</a><a href="#scalabilita">Scalabilità</a><a href="#ottimizzazione">Ottimizzazione</a><a class="cta" href="#contatto">Contatto</a></div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow"><i class="dot"></i> Digital Commerce · Business Design · Process Design</span>
+      <h1>Non solo e-commerce. <span class="grad">Sistemi che crescono.</span></h1>
+      <p class="lead">Un portfolio interattivo che racconta un percorso: trasformare attività operative in processi strutturati, dati in strumenti decisionali e competenze individuali in patrimonio organizzativo.</p>
+      <div class="hero-actions"><a class="btn primary" href="#indice">Esplora il portfolio</a><a class="btn" href="#valore">Vedi i risultati</a></div>
+    </div>
+    <div class="device reveal">
+      <div class="screen">
+        <div class="orbit"></div>
+        <div class="eyebrow" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16);color:#d9e8ff"><i class="dot"></i> Executive snapshot</div>
+        <div class="metric-stack">
+          <div class="mini-card"><small>Ricavi ecommerce</small><strong><span class="count" data-target="3.2" data-suffix="M€">0</span></strong><div class="bars"><div class="bar"><i data-w="94%"></i></div></div></div>
+          <div class="mini-card"><small>ROAS medio AS98</small><strong><span class="count" data-target="6.0" data-suffix="x">0</span></strong><div class="bars"><div class="bar"><i data-w="83%"></i></div></div></div>
+          <div class="mini-card"><small>Riduzione lead time</small><strong><span class="count" data-target="80" data-prefix="−" data-suffix="%">0</span></strong><div class="bars"><div class="bar"><i data-w="88%"></i></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="indice">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">Indice narrativo</div><h2>Tre livelli di lettura.</h2></div><p class="sub">Dal metodo personale alla crescita professionale, fino ai risultati operativi misurabili costruiti in OLIP per A.S.98 e MJUS.</p></div>
+    <div class="index-grid">
+      <a class="panel index-card reveal" href="#approccio"><b>01</b><h3>Approccio</h3><p>Comprendere, analizzare, scegliere le priorità, costruire sistemi e integrare i reparti.</p></a>
+      <a class="panel index-card reveal" href="#evoluzione"><b>02</b><h3>Evoluzione</h3><p>Dalla progettazione software e interfacce digitali alla responsabilità di sistemi di Digital Commerce.</p></a>
+      <a class="panel index-card reveal" href="#contributo"><b>03</b><h3>Contributo operativo</h3><p>Case study divisi tra generazione del valore, scalabilità e ciclo di ottimizzazione.</p></a>
+    </div>
+  </div>
+</section>
+
+<section id="approccio">
+  <div class="wrap method">
+    <div class="sticky reveal"><div class="kicker">01 · Approccio</div><h2>Prima capire. Poi costruire.</h2><p class="sub">Il valore non nasce dal cambiare tutto, ma dal leggere il contesto e progettare sistemi che rendano l'organizzazione più autonoma, misurabile e scalabile.</p></div>
+    <div class="steps">
+      <div class="panel step reveal"><div class="num">01</div><div><h3>Comprendere il contesto</h3><p>Visione strategica, ruolo del canale e-commerce, competenze presenti, strumenti disponibili e integrazione tra reparti.</p></div></div>
+      <div class="panel step reveal"><div class="num">02</div><div><h3>Analizzare prima di decidere</h3><p>Vendite, conversione, marginalità, catalogo, rotazione stock, customer journey, canali di acquisizione e processi.</p></div></div>
+      <div class="panel step reveal"><div class="num">03</div><div><h3>Definire le priorità</h3><p>Ogni iniziativa viene valutata per valore generato, investimento richiesto, complessità, impatto organizzativo e misurabilità.</p></div></div>
+      <div class="panel step reveal"><div class="num">04</div><div><h3>Costruire sistemi</h3><p>Dashboard, automazioni, flussi operativi e processi trasferibili che non dipendono solo dalla memoria delle persone.</p></div></div>
+      <div class="panel step reveal"><div class="num">05</div><div><h3>Integrare i reparti</h3><p>Marketing, prodotto, logistica, amministrazione, customer care e area tecnica devono leggere lo stesso sistema.</p></div></div>
+      <div class="panel step reveal"><div class="num">06</div><div><h3>Miglioramento continuo</h3><p>Ogni sistema viene osservato, corretto e fatto evolvere in base a nuove opportunità, dati e obiettivi condivisi.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="evoluzione">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">02 · Evoluzione professionale</div><h2>Dal codice ai processi.</h2></div><p class="sub">Una traiettoria progressiva: tecnica, design dell'interazione, marketing digitale, e-commerce, business intelligence e organizzazione.</p></div>
+    <div class="panel timeline reveal">
+      <div class="tl"><div class="year">2000–2007</div><div><h3>Softia S.r.l.</h3><p>Analista programmatore, web designer e project manager. Qui nasce il metodo: comprendere un problema, analizzarne il contesto e progettare una soluzione sostenibile.</p><div class="chips"><span class="chip">Software</span><span class="chip">Database</span><span class="chip">Web</span><span class="chip">Project management</span></div></div></div>
+      <div class="tl"><div class="year">2007–2021</div><div><h3>Colours & Beauty S.p.A.</h3><p>Passaggio dalla progettazione tecnica alla responsabilità di funzioni trasversali: BI, IT, marketing operations, CRM, loyalty, Magento e campagne digitali.</p><div class="chips"><span class="chip">Business Intelligence</span><span class="chip">Magento</span><span class="chip">CRM</span><span class="chip">Marketing</span></div></div></div>
+      <div class="tl"><div class="year">2021–oggi</div><div><h3>OLIP Italia — A.S.98 · MJUS</h3><p>Responsabilità e-commerce e marketing, con estensione a buying, performance media, marketplace, dashboard, automazioni, processi e coordinamento del team.</p><div class="chips"><span class="chip">Digital Commerce</span><span class="chip">Marketplace</span><span class="chip">Performance</span><span class="chip">Process Design</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contributo">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">03 · Contributo operativo</div><h2>Il sistema che collega le attività.</h2></div><p class="sub">Il perimetro copre funzioni spesso distribuite tra più figure: e-commerce management, performance media, contenuti, dati, processi, marketplace e leadership operativa.</p></div>
+    <div class="kpi-grid">
+      <div class="panel kpi reveal"><div class="value"><span class="count" data-target="3.2" data-prefix="~" data-suffix="M€">0</span></div><div class="label">Picco ricavi totali annui</div><p>Tre canali e-commerce combinati.</p></div>
+      <div class="panel kpi reveal"><div class="value"><span class="count" data-target="3.1" data-prefix="~" data-suffix="M€">0</span></div><div class="label">Valore campagne Google Ads</div><p>AS98 2022–2025 su circa 517K€ investiti.</p></div>
+      <div class="panel kpi reveal"><div class="value"><span class="count" data-target="6.0" data-prefix="~" data-suffix="x">0</span></div><div class="label">ROAS medio AS98</div><p>Stabile anche con crescita forte del budget.</p></div>
+      <div class="panel kpi reveal"><div class="value"><span class="count" data-target="50" data-prefix="~" data-suffix="K€">0</span></div><div class="label">Zalando ZFS</div><p>Incassato netto in quattro mesi.</p></div>
+      <div class="panel kpi reveal"><div class="value"><span class="count" data-target="80" data-prefix="−" data-suffix="%">0</span></div><div class="label">Manodopera carico merce</div><p>Lead time ridotto da 3 giorni a meno di 4 ore.</p></div>
+      <div class="panel kpi reveal"><div class="value"><span class="count" data-target="5" data-suffix=" risorse">0</span></div><div class="label">Team coordinato</div><p>Formato da zero con responsabilità operativa e HR.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="valore">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">03-01 · Generazione del valore</div><h2>Ricavi, media, distribuzione.</h2></div><p class="sub">Dai canali diretti ai marketplace, fino a CRM, segmentazione e Amazon: il valore nasce dalla coerenza commerciale del sistema.</p></div>
+    <div class="case-tabs reveal"><button class="tab active" data-tab="ads">Google Ads</button><button class="tab" data-tab="direct">Canali diretti</button><button class="tab" data-tab="market">Marketplace</button><button class="tab" data-tab="crm">CRM</button><button class="tab" data-tab="amazon">Amazon</button></div>
+    <div class="panel case active reveal" id="case-ads"><div class="case-copy"><h3>Performance media scalata senza perdere efficienza.</h3><p>Le campagne sono state strutturate per paese, categoria e tipologia articolo. Il budget mensile è cresciuto da circa 500€ a 35.000€, mantenendo un ROAS medio AS98 attorno a 6,0x.</p><div class="chart"><div class="col"><i data-h="38%"></i><span>2022<br>5,4x</span></div><div class="col"><i data-h="86%"></i><span>2023<br>6,3x</span></div><div class="col"><i data-h="66%"></i><span>2024<br>6,0x</span></div><div class="col"><i data-h="70%"></i><span>2025<br>6,2x</span></div></div></div><div class="case-flow"><div class="flow-item"><span>1</span><div><b>Segmentazione</b><small>Paese, categoria, articolo continuativo e non scontato.</small></div></div><div class="flow-item"><span>2</span><div><b>Feed integrati</b><small>Google Merchant Center collegato a Magento 2.</small></div></div><div class="flow-item"><span>3</span><div><b>Controllo</b><small>ROAS monitorato durante la crescita del budget.</small></div></div><div class="flow-item"><span>4</span><div><b>Risultato</b><small>3,1M€ generati su circa 517K€ investiti.</small></div></div></div></div>
+    <div class="panel case reveal" id="case-direct"><div class="case-copy"><h3>Tre canali diretti gestiti come business unit.</h3><p>A.S.98, MJUS e Outlet sono stati presidiati con assortimento, pricing, promozioni, incassi e analisi per paese, categoria e scontrino medio. L'Outlet è stato ridimensionato per proteggere il prezzo pieno.</p></div><div class="case-flow"><div class="flow-item"><span>1</span><div><b>A.S.98</b><small>Circa 2,4M€ di ricavi annui e scontrino medio intorno a 260€.</small></div></div><div class="flow-item"><span>2</span><div><b>MJUS</b><small>Canale diretto con logiche commerciali e performance dedicate.</small></div></div><div class="flow-item"><span>3</span><div><b>Outlet</b><small>Riposizionato per non danneggiare il full price.</small></div></div></div></div>
+    <div class="panel case reveal" id="case-market"><div class="case-copy"><h3>Marketplace senza cedere il controllo del prezzo.</h3><p>La presenza su Zalando è stata ripensata con modello ZFS tramite partner, mantenendo controllo su prezzi e disponibilità. Le giacenze sono state convogliate su Veepee in sette mercati europei.</p></div><div class="case-flow"><div class="flow-item"><span>1</span><div><b>Zalando ZFS</b><small>Merce nei magazzini Zalando, proprietà aziendale fino alla vendita.</small></div></div><div class="flow-item"><span>2</span><div><b>AboutYou</b><small>Lancio operativo previsto tramite la stessa struttura.</small></div></div><div class="flow-item"><span>3</span><div><b>Veepee</b><small>Recupero giacenze e The Place per articoli correnti a prezzo pieno.</small></div></div></div></div>
+    <div class="panel case reveal" id="case-crm"><div class="case-copy"><h3>Dal “tutti uguali” al Customer Lifetime Value.</h3><p>La segmentazione RFM, integrata con Brevo e Magento, permette di differenziare comunicazioni, accessi anticipati, scontistiche e fidelizzazione in funzione del valore reale del cliente.</p></div><div class="case-flow"><div class="flow-item"><span>1</span><div><b>Classificazione</b><small>Platinum, Gold, Silver, New e Subscriber.</small></div></div><div class="flow-item"><span>2</span><div><b>Automazione</b><small>Newsletter e flussi marketing senza interventi manuali.</small></div></div><div class="flow-item"><span>3</span><div><b>Obiettivo</b><small>Comunicazione personalizzata su larga scala.</small></div></div></div></div>
+    <div class="panel case reveal" id="case-amazon"><div class="case-copy"><h3>Amazon come canale contenuto + advertising.</h3><p>Brand Store, contenuti A+, Sponsored Ads e attività SAS hanno strutturato la presenza del marchio nei principali mercati europei.</p></div><div class="case-flow"><div class="flow-item"><span>1</span><div><b>Store</b><small>Italia, Francia, Germania, Belgio e Polonia.</small></div></div><div class="flow-item"><span>2</span><div><b>Contenuti A+</b><small>Pagine prodotto più ricche e coerenti col brand.</small></div></div><div class="flow-item"><span>3</span><div><b>SAS</b><small>Ottimizzazione con team Amazon.</small></div></div></div></div>
+  </div>
+</section>
+
+<section id="scalabilita">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">03-02 · Scalabilità e controllo</div><h2>Dati, automazioni, leadership.</h2></div><p class="sub">La crescita diventa sostenibile quando il lavoro non dipende più da file manuali, memoria individuale o controlli periodici.</p></div>
+    <div class="diagram reveal"><div class="node">Magento / ERP / Database</div><div class="arrow">→</div><div class="node">Query e automazioni</div><div class="arrow">→</div><div class="node">Dashboard, processi, decisioni</div></div>
+    <br>
+    <div class="kpi-grid">
+      <div class="panel kpi reveal"><div class="label">Dashboard direzionali</div><p>Looker Studio collegato al database aziendale: incassi, pezzi, scontrino medio, sell-out, giacenze e confronto anno precedente.</p></div>
+      <div class="panel kpi reveal"><div class="label">Resi automatici</div><p>ItsRever integrato con Magento 2 e rimborso automatico sulla piattaforma di pagamento originale.</p></div>
+      <div class="panel kpi reveal"><div class="label">Etichette ZPL</div><p>SKU, taglia, brand e colore in un unico passaggio: 30 secondi per paio, lead time sotto le 4 ore.</p></div>
+      <div class="panel kpi reveal"><div class="label">Store locator</div><p>Clienti attivi estratti automaticamente, indirizzi geocodificati e aggiornamento autonomo.</p></div>
+      <div class="panel kpi reveal"><div class="label">Controllo economico</div><p>Piano dei conti mensile per leggere la redditività del reparto oltre gli incassi lordi.</p></div>
+      <div class="panel kpi reveal"><div class="label">Team e Planner</div><p>Coordinamento di cinque risorse e sistema operativo esportato anche al reparto B2B.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ottimizzazione">
+  <div class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">03-03 · Ciclo di ottimizzazione</div><h2>Quando marketing, prodotto e vendita si parlano.</h2></div><p class="sub">Hero product, buying, shooting, rete commerciale e B2B digitale diventano parti dello stesso ciclo operativo.</p></div>
+    <div class="panel" style="padding:26px">
+      <div class="diagram reveal"><div class="node">Dati storici e primi ordini</div><div class="arrow">→</div><div class="node">Selezione hero product</div><div class="arrow">→</div><div class="node">Shooting, ads, sell-in</div></div>
+      <div class="diagram reveal" style="margin-top:12px"><div class="node">Domanda reale online</div><div class="arrow">→</div><div class="node">Riassortimento e produzione</div><div class="arrow">→</div><div class="node">Disponibilità e sell-out</div></div>
+    </div>
+    <br>
+    <div class="kpi-grid">
+      <div class="panel kpi reveal"><div class="label">Hero product</div><p>Circa 25 articoli per brand e stagione concentrano shooting, piano editoriale, Performance Max e supporto al sell-in wholesale.</p></div>
+      <div class="panel kpi reveal"><div class="label">Buying strutturato</div><p>Selezione costruita incrociando dati storici, primi ordini wholesale, coerenza visiva e fascia prezzo.</p></div>
+      <div class="panel kpi reveal"><div class="label">Piano editoriale</div><p>Calendario semestrale sulle 16 settimane di vendita a prezzo pieno, con newsletter, post e stories coordinate.</p></div>
+      <div class="panel kpi reveal"><div class="label">Impatto trasversale</div><p>Magazzino, commerciale B2B, amministrazione e reparto B2B beneficiano di sistemi più ordinati e autonomi.</p></div>
+      <div class="panel kpi reveal"><div class="label">Sviluppi identificati</div><p>Fotografia prodotto, produzione hero e calendario condiviso come opportunità a impatto elevato e intervento limitato.</p></div>
+      <div class="panel kpi reveal"><div class="label">B2B digitale 2027</div><p>Nuovo sistema di comunicazione e ordine diretto per negozianti, basato su competenze già sviluppate nell'e-commerce.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contatto">
+  <div class="wrap final reveal">
+    <div class="kicker" style="color:#8ecbff">Sintesi</div>
+    <h2>Il valore non è la somma delle attività. È la coerenza del sistema che le collega.</h2>
+    <p>Buying, performance media, contenuti, automazione, analisi dati, controllo economico, marketplace, qualità del dato e team leadership: aree diverse presidiate con lo stesso metodo progettuale.</p>
+    <div class="quote">Simone Garza<br><span style="color:#8ecbff">E-commerce & Digital Operations Lead</span></div>
+    <p style="margin-top:26px">+39 340 4073718 · simone.garza@gmail.com</p>
+  </div>
+</section>
+
+<script>
+const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on'); e.target.querySelectorAll?.('.bar i').forEach(b=>b.style.width=b.dataset.w); e.target.querySelectorAll?.('.col i').forEach(c=>c.style.height=c.dataset.h); e.target.querySelectorAll?.('.count').forEach(animateCount);}})},{threshold:.16});
+document.querySelectorAll('.reveal,.device,.hero .reveal,.kpi,.panel').forEach(el=>io.observe(el));
+function animateCount(el){if(el.dataset.done)return;el.dataset.done=1;const target=parseFloat(el.dataset.target||0);const prefix=el.dataset.prefix||'';const suffix=el.dataset.suffix||'';const dec=(String(target).includes('.')?1:0);let start=null;function tick(t){if(!start)start=t;const p=Math.min((t-start)/1300,1);const eased=1-Math.pow(1-p,3);const val=target*eased;el.textContent=prefix+val.toFixed(dec)+suffix;if(p<1)requestAnimationFrame(tick);else el.textContent=prefix+target.toFixed(dec)+suffix;}requestAnimationFrame(tick)}
+document.querySelectorAll('.tab').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.case').forEach(c=>c.classList.remove('active'));document.getElementById('case-'+btn.dataset.tab).classList.add('active');document.getElementById('case-'+btn.dataset.tab).querySelectorAll('.col i').forEach(c=>setTimeout(()=>c.style.height=c.dataset.h,80));}));
+window.addEventListener('mousemove',e=>{const x=(e.clientX/window.innerWidth-.5)*18;const y=(e.clientY/window.innerHeight-.5)*18;document.querySelectorAll('.device').forEach(d=>d.style.transform=`perspective(1000px) rotateY(${x/3}deg) rotateX(${-y/4}deg)`)});
+</script>
+</body>
+</html>
