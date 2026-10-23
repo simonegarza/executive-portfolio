@@ -2,7 +2,7 @@ window.PORTFOLIO = [
   {
     "id": 1,
     "title": "E-commerce management",
-    "group": "Commercio",
+    "group": "Generazione del valore",
     "status": "Operativo",
     "headline": "Tre canali, una regia.",
     "context": "AS98, MJUS e Outlet avevano performance disomogenee e una gestione non integrata.",
@@ -13,12 +13,14 @@ window.PORTFOLIO = [
       4,
       8,
       9
-    ]
+    ],
+    "macro": 1,
+    "url": "ambiti/01.html"
   },
   {
     "id": 2,
     "title": "Buying e riassortimento",
-    "group": "Commercio",
+    "group": "Ciclo di ottimizzazione",
     "status": "Operativo",
     "headline": "Dalla domanda alla disponibilità.",
     "context": "Il canale online non aveva una struttura di acquisto dedicata.",
@@ -28,12 +30,14 @@ window.PORTFOLIO = [
       1,
       7,
       10
-    ]
+    ],
+    "macro": 3,
+    "url": "ambiti/02.html"
   },
   {
     "id": 3,
     "title": "Strategia B2B",
-    "group": "Commercio",
+    "group": "Ciclo di ottimizzazione",
     "status": "Operativo / in sviluppo",
     "headline": "La rete accede. Il sistema distribuisce.",
     "context": "Materiali di collezione dispersi e allegati obsoleti generavano dipendenza dall’ufficio interno.",
@@ -44,12 +48,14 @@ window.PORTFOLIO = [
       10,
       15,
       17
-    ]
+    ],
+    "macro": 3,
+    "url": "ambiti/03.html"
   },
   {
     "id": 4,
     "title": "Google Ads e performance media",
-    "group": "Commercio",
+    "group": "Generazione del valore",
     "status": "Operativo",
     "headline": "Scalare mantenendo efficienza.",
     "context": "Il budget iniziale era di circa 500 € al mese su un solo brand.",
@@ -59,12 +65,14 @@ window.PORTFOLIO = [
       1,
       7,
       10
-    ]
+    ],
+    "macro": 1,
+    "url": "ambiti/04.html"
   },
   {
     "id": 5,
     "title": "Shooting e piano editoriale",
-    "group": "Contenuti",
+    "group": "Ciclo di ottimizzazione",
     "status": "Operativo / in sviluppo",
     "headline": "Un prodotto. Una settimana. Tutti i canali.",
     "context": "Produzione visiva e comunicazione non erano collegate da un piano strutturato.",
@@ -74,12 +82,14 @@ window.PORTFOLIO = [
       3,
       10,
       12
-    ]
+    ],
+    "macro": 3,
+    "url": "ambiti/05.html"
   },
   {
     "id": 6,
     "title": "Automazioni e integrazioni tecniche",
-    "group": "Sistemi",
+    "group": "Scalabilità e controllo",
     "status": "Operativo",
     "headline": "Il reso diventa un processo autonomo.",
     "context": "Il Customer Care seguiva manualmente ogni pratica di reso.",
@@ -89,12 +99,14 @@ window.PORTFOLIO = [
       7,
       13,
       15
-    ]
+    ],
+    "macro": 2,
+    "url": "ambiti/06.html"
   },
   {
     "id": 7,
     "title": "Data analysis e dashboard",
-    "group": "Sistemi",
+    "group": "Scalabilità e controllo",
     "status": "Operativo",
     "headline": "Il dato entra nelle decisioni.",
     "context": "Mancava un monitoraggio tempestivo e granulare delle performance.",
@@ -106,12 +118,14 @@ window.PORTFOLIO = [
       4,
       9,
       13
-    ]
+    ],
+    "macro": 2,
+    "url": "ambiti/07.html"
   },
   {
     "id": 8,
     "title": "Outlet strategy e rete Veepee",
-    "group": "Commercio",
+    "group": "Generazione del valore",
     "status": "Operativo",
     "headline": "Smaltire senza erodere il posizionamento.",
     "context": "Promuovere l’outlet proprietario rischiava di cannibalizzare il prezzo pieno.",
@@ -121,12 +135,14 @@ window.PORTFOLIO = [
       1,
       2,
       11
-    ]
+    ],
+    "macro": 1,
+    "url": "ambiti/08.html"
   },
   {
     "id": 9,
     "title": "Piano dei conti e controllo economico",
-    "group": "Sistemi",
+    "group": "Scalabilità e controllo",
     "status": "Operativo",
     "headline": "Dall’incasso al risultato di reparto.",
     "context": "I ricavi lordi non erano separati dai costi specifici dell’e-commerce.",
@@ -136,12 +152,14 @@ window.PORTFOLIO = [
       1,
       4,
       7
-    ]
+    ],
+    "macro": 2,
+    "url": "ambiti/09.html"
   },
   {
     "id": 10,
     "title": "Hero product strategy",
-    "group": "Contenuti",
+    "group": "Ciclo di ottimizzazione",
     "status": "Operativo",
     "headline": "Un centro di gravità per il prodotto.",
     "context": "Shooting, piano editoriale e advertising seguivano logiche separate.",
@@ -152,12 +170,14 @@ window.PORTFOLIO = [
       3,
       4,
       5
-    ]
+    ],
+    "macro": 3,
+    "url": "ambiti/10.html"
   },
   {
     "id": 11,
     "title": "Marketplace: Zalando e AboutYou",
-    "group": "Commercio",
+    "group": "Generazione del valore",
     "status": "Operativo",
     "headline": "Controllo del prezzo. Scala europea.",
     "context": "Le vendite tramite terzi esponevano i brand a sconti anticipati e tensioni con il wholesale.",
@@ -168,12 +188,14 @@ window.PORTFOLIO = [
       8,
       9,
       17
-    ]
+    ],
+    "macro": 1,
+    "url": "ambiti/11.html"
   },
   {
     "id": 12,
     "title": "Fotografia prodotto: ottimizzazione",
-    "group": "Contenuti",
+    "group": "Ciclo di ottimizzazione",
     "status": "Proposta",
     "headline": "Liberare tempo, migliorare il catalogo.",
     "context": "Circa 800 modelli e 4.800 foto all’anno assorbono una stima di 200–260 ore interne.",
@@ -183,12 +205,14 @@ window.PORTFOLIO = [
       5,
       10,
       17
-    ]
+    ],
+    "macro": 3,
+    "url": "ambiti/12.html"
   },
   {
     "id": 13,
     "title": "Store locator e qualità del dato",
-    "group": "Sistemi",
+    "group": "Scalabilità e controllo",
     "status": "Operativo",
     "headline": "Solo negozi attivi. Dati aggiornati.",
     "context": "Liste Excel manuali contenevano duplicati, indirizzi errati e negozi inattivi.",
@@ -198,12 +222,14 @@ window.PORTFOLIO = [
       3,
       6,
       7
-    ]
+    ],
+    "macro": 2,
+    "url": "ambiti/13.html"
   },
   {
     "id": 14,
     "title": "Logistica e standardizzazione cross-brand",
-    "group": "Sistemi",
+    "group": "Scalabilità e controllo",
     "status": "Operativo",
     "headline": "Da 72 ore a meno di quattro.",
     "context": "Ristampa etichette e applicazione manuale dei listini rallentavano la disponibilità della merce.",
@@ -214,12 +240,14 @@ window.PORTFOLIO = [
       6,
       15,
       16
-    ]
+    ],
+    "macro": 2,
+    "url": "ambiti/14.html"
   },
   {
     "id": 15,
     "title": "Leadership e coordinamento del team",
-    "group": "Persone",
+    "group": "Scalabilità e controllo",
     "status": "Operativo",
     "headline": "Costruire autonomia, ogni giorno.",
     "context": "Dopo l’uscita del responsabile Marketing ho assunto la gestione della struttura e proposto gli inserimenti necessari.",
@@ -230,12 +258,14 @@ window.PORTFOLIO = [
       6,
       14,
       16
-    ]
+    ],
+    "macro": 2,
+    "url": "ambiti/15.html"
   },
   {
     "id": 16,
     "title": "Impatto trasversale sui reparti",
-    "group": "Persone",
+    "group": "Ciclo di ottimizzazione",
     "status": "Operativo",
     "headline": "Il metodo supera i confini del reparto.",
     "context": "Magazzino, commerciale e amministrazione avevano bisogno di informazioni e richieste strutturate.",
@@ -246,12 +276,14 @@ window.PORTFOLIO = [
       7,
       14,
       15
-    ]
+    ],
+    "macro": 3,
+    "url": "ambiti/16.html"
   },
   {
     "id": 17,
     "title": "Visione e priorità strategiche",
-    "group": "Direzione",
+    "group": "Ciclo di ottimizzazione",
     "status": "Obiettivi / proposte",
     "headline": "Far maturare il sistema.",
     "context": "La fase successiva riguarda marketplace, relazione digitale con i negozianti e valorizzazione degli asset esistenti.",
@@ -262,6 +294,8 @@ window.PORTFOLIO = [
       10,
       11,
       12
-    ]
+    ],
+    "macro": 3,
+    "url": "ambiti/17.html"
   }
 ];

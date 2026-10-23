@@ -46,3 +46,14 @@ HTML semantico, lingua italiana, navigazione con ancore, skip link, focus visibi
 
 Verifiche eseguite: sintassi JavaScript, integrità di ancore e asset locali, 17 nodi e 17 approfondimenti, selezione filtro Contenuti (3 nodi), navigazione a una competenza collegata fuori filtro (ripristino 17 nodi), apertura del relativo approfondimento. Ispezione visiva nel browser desktop e in viewport incorporato da 390 px, inclusa mappa mobile. Non è un audit WCAG completo né un test su dispositivi fisici o tutti i browser.
 
+
+## Approfondimenti integrali e macroaree
+
+Le 17 pagine in `ambiti/` riproducono tutti i paragrafi dei rispettivi ambiti del documento Contributo professionale. Le note editoriali sono separate dal testo originale. L'indice offre una sintesi espandibile e un collegamento Approfondisci sempre visibile; le pagine integrali funzionano senza JavaScript e includono ritorno alla sintesi e navigazione precedente/successivo.
+
+La classificazione riprende le tre macroaree della precedente versione del portfolio:
+- Generazione del valore: 01, 04, 08, 11.
+- Scalabilità e controllo: 06, 07, 09, 13, 14, 15.
+- Ciclo di ottimizzazione: 02, 03, 05, 10, 12, 16, 17.
+
+Verifica aggiuntiva: confronto di tutti i paragrafi con l'estrazione del documento; 18 pagine HTML con percorsi, ancore e ID validi; filtri 4/6/7 nodi; ritorno alla sintesi con apertura automatica; controllo visivo mobile e correzione dell'overflow della navigazione.

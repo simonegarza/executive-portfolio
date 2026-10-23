@@ -15,7 +15,7 @@
     b.className = 'node'; b.id = `node-${d.id}`; b.dataset.id = d.id;
     b.setAttribute('aria-label', `${pad(d.id)} — ${d.title}`);
     b.setAttribute('aria-controls','node-detail');
-    b.innerHTML = `<small>${pad(d.id)} / ${d.group.toUpperCase()}</small>${short[d.id-1]}`;
+    b.innerHTML = `<small>${pad(d.id)} / AREA ${pad(d.macro)}</small>${short[d.id-1]}`;
     b.addEventListener('click', () => select(d.id)); nodes.append(b);
   });
   function layout() {
@@ -25,7 +25,7 @@
       let p;
       if (mobile) {const count = Math.ceil(visible.length/2);p = [i%2 ? 75:25, 7 + Math.floor(i/2)*(86/Math.max(count-1,1))];}
       else if (filter==='Tutti') p=positions[d.id-1];
-      else p=[22+(i%3)*28,22+Math.floor(i/3)*45];
+      else p=[22+(i%3)*28,18+Math.floor(i/3)*(64/Math.max(Math.ceil(visible.length/3)-1,1))];
       const el=document.getElementById(`node-${d.id}`); el.style.left=p[0]+'%';el.style.top=p[1]+'%';
     });
     svg.replaceChildren();
@@ -42,7 +42,7 @@
   function select(id) {
     selected=id; const d=data[id-1];
     data.forEach(item => {const el=document.getElementById(`node-${item.id}`);el.setAttribute('aria-pressed',String(item.id===id));el.classList.toggle('connected',d.links.includes(item.id));});
-    panel.innerHTML=`<div class="node-top"><span>${pad(id)} / ${d.group.toUpperCase()}</span><span>${d.status.toUpperCase()}</span></div><h3>${d.headline}</h3><p>${d.result}</p><div class="node-links">CONNESSIONI<br>${d.links.map(n=>`<button data-related="${n}" aria-label="Esplora ${data[n-1].title}">${pad(n)} ↗ ${short[n-1]}</button>`).join('')}</div><a class="text-link open-area" href="#ambito-${id}">Contesto e azione <span>↗</span></a>`;
+    panel.innerHTML=`<div class="node-top"><span>${pad(id)} / ${d.group.toUpperCase()}</span><span>${d.status.toUpperCase()}</span></div><h3>${d.headline}</h3><p>${d.result}</p><div class="node-links">CONNESSIONI<br>${d.links.map(n=>`<button data-related="${n}" aria-label="Esplora ${data[n-1].title}">${pad(n)} ↗ ${short[n-1]}</button>`).join('')}</div><a class="text-link" href="${d.url}">Approfondisci — testo completo <span>↗</span></a>`;
     layout();
   }
   function setFilter(value) {
