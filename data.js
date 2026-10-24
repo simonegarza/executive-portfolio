@@ -175,22 +175,22 @@ window.PORTFOLIO = [
     "url": "ambiti/10.html"
   },
   {
-    "id": 11,
-    "title": "Marketplace: Zalando e AboutYou",
-    "group": "Generazione del valore",
-    "status": "Operativo",
-    "headline": "Controllo del prezzo. Scala europea.",
-    "context": "Le vendite tramite terzi esponevano i brand a sconti anticipati e tensioni con il wholesale.",
-    "action": "Ho individuato The Agent come partner e negoziato il modello Zalando ZFS: proprietà aziendale fino alla vendita, logistica e resi affidati al marketplace. Estensione ad AboutYou indicata da aprile 2026.",
-    "result": "Zalando online da novembre 2025: circa 400 paia e 50.000 € netti nei primi quattro mesi, dopo IVA, commissioni e fulfillment. È un dato iniziale, non annuale.",
-    "links": [
-      1,
-      8,
-      9,
-      17
-    ],
-    "macro": 1,
-    "url": "ambiti/11.html"
+      "id": 11,
+      "title": "Marketplace: Zalando e About You",
+      "group": "Generazione del valore",
+      "status": "Operativo",
+      "headline": "Controllo del prezzo. Scala europea.",
+      "context": "Le vendite tramite terzi esponevano i brand a sconti anticipati e tensioni con il wholesale. L’obiettivo era sviluppare un canale marketplace aggiuntivo, con controllo su prezzi e disponibilità.",
+      "action": "Ho individuato The Agent e negoziato l’accordo per il modello Zalando ZFS. Ho coordinato cataloghi, assortimenti, forniture e riassortimenti, consolidando A.S.98 su Zalando, attivando MJUS e sviluppando About You.",
+      "result": "Da novembre 2025 a ottobre 2026, circa 290.000 € di incassi netti secondo gli ultimi dati condivisi. MJUS online su Zalando dal 10 agosto 2026 e sviluppo di About You per A.S.98: un canale aggiuntivo con processi operativi strutturati.",
+      "links": [
+          1,
+          8,
+          9,
+          17
+      ],
+      "macro": 1,
+      "url": "ambiti/11.html"
   },
   {
     "id": 12,
