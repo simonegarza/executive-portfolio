@@ -182,7 +182,7 @@ window.PORTFOLIO = [
       "headline": "Controllo del prezzo. Scala europea.",
       "context": "Le vendite tramite terzi esponevano i brand a sconti anticipati e tensioni con il wholesale. L’obiettivo era sviluppare un canale marketplace aggiuntivo, con controllo su prezzi e disponibilità.",
       "action": "Ho individuato The Agent e negoziato l’accordo per il modello Zalando ZFS. Ho coordinato cataloghi, assortimenti, forniture e riassortimenti, consolidando A.S.98 su Zalando, attivando MJUS e sviluppando About You.",
-      "result": "Da novembre 2025 a ottobre 2026, circa 290.000 € di incassi netti secondo gli ultimi dati condivisi. MJUS online su Zalando dal 10 agosto 2026 e sviluppo di About You per A.S.98: un canale aggiuntivo con processi operativi strutturati.",
+      "result": "Circa 290.000 € di incassi netti cumulati della collaborazione con The Agent da novembre 2025 agli ultimi dati condivisi a ottobre 2026 (portfolio aggiornato al 24 ottobre). Il dato non è ripartito per stagione, brand o marketplace e non misura il raggiungimento del target estivo 2026. MJUS online su Zalando dal 10 agosto 2026; About You sviluppato per A.S.98.",
       "links": [
           1,
           8,
@@ -288,7 +288,7 @@ window.PORTFOLIO = [
     "headline": "Far maturare il sistema.",
     "context": "La fase successiva riguarda marketplace, relazione digitale con i negozianti e valorizzazione degli asset esistenti.",
     "action": "Priorità: consolidare Zalando e AboutYou; progettare un nuovo sistema B2B con target di avvio a inizio 2027. Opportunità: calendario condiviso, etichette personalizzate, shooting per negozianti e pianificazione produttiva degli hero.",
-    "result": "Target marketplace: 150.000 € netti e circa 1.500 paia. Sono obiettivi forniti, non risultati acquisiti. Stato dei target stagionali 2026 da aggiornare con i consuntivi.",
+    "result": "Obiettivo originario per la prima stagione completa, estate 2026: 150.000 € di incassi netti e circa 1.500 paia a prezzo di listino, riferito a Zalando ZFS. Il consuntivo della sola stagione non è disponibile; il cumulato della collaborazione con The Agent non consente di verificarne il raggiungimento.",
     "links": [
       3,
       10,
