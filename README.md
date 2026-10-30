@@ -57,3 +57,33 @@ La classificazione riprende le tre macroaree della precedente versione del portf
 - Ciclo di ottimizzazione: 02, 03, 05, 10, 12, 16, 17.
 
 Verifica aggiuntiva: confronto di tutti i paragrafi con l'estrazione del documento; 18 pagine HTML con percorsi, ancore e ID validi; filtri 4/6/7 nodi; ritorno alla sintesi con apertura automatica; controllo visivo mobile e correzione dell'overflow della navigazione.
+
+## Verifica KPI marketplace — 30 ottobre 2026
+
+Verifica di coerenza editoriale sul codice del repository al commit `062866fd62d3dff06e57b8767950d3f5aab9357f` (24 ottobre 2026). Gli importi restano quelli dichiarati nel portfolio: non è una verifica contabile su rendiconti del partner.
+
+| KPI | Natura e periodo documentati | Perimetro e limiti |
+| --- | --- | --- |
+| 150.000 € netti, circa 1.500 paia a prezzo di listino | Obiettivo originario della prima stagione completa, estate 2026 | Il testo dell’ambito 17 lo associa a Zalando ZFS. Non specifica la ripartizione per brand, le date contabili della stagione o un target separato About You. Non è un risultato acquisito. |
+| Circa 290.000 € di incassi netti | Consuntivo cumulato da novembre 2025 agli ultimi dati condivisi a ottobre 2026; aggiornamento del portfolio al 24 ottobre | Collaborazione con The Agent, che comprende lo sviluppo Zalando e About You per A.S.98/MJUS secondo le attivazioni descritte. Mancano ripartizioni per stagione, brand e marketplace; non è una chiusura documentata al 31 ottobre. Incassi netti, non utile. |
+| Circa 50.000 € netti e 400 paia | Dato parziale storico nei primi quattro mesi da novembre 2025 | Zalando ZFS tramite The Agent. La homepage specifica netto dopo IVA, commissioni e logistica. Le date esatte non sono documentate; non attribuirlo automaticamente all’estate 2026 e non sommarlo al cumulato. Non è documentata l’omogeneità del criterio di netto con il dato di 290.000 €. |
+
+Inventario delle occorrenze nel codice esaminato:
+
+| File / posizione | Occorrenze pertinenti |
+| --- | --- |
+| `index.html`, progetto P—02 | Circa 400 paia e 50.000 € netti, The Agent, Zalando ZFS, successiva estensione About You. |
+| `index.html`, ambito 11 | Zalando/About You/The Agent, attivazione About You da aprile 2026, MJUS su Zalando dal 10 agosto 2026, circa 290.000 € cumulati. |
+| `index.html`, ambito 17 | Target originario 150.000 € / circa 1.500 paia e priorità Zalando/About You. |
+| `index.html`, sezione Visione | Seconda presentazione del target 150.000 € / circa 1.500 paia. |
+| `data.js`, nodo 11 | Sintesi della collaborazione e del cumulato di circa 290.000 €, mostrata nella mappa interattiva. |
+| `data.js`, nodo 17 | Sintesi del target 150.000 € / circa 1.500 paia, mostrata nella mappa interattiva. |
+| `ambiti/11.html` | Approfondimento Zalando/About You/The Agent, cumulato di circa 290.000 €, avvio novembre 2025 e attivazione MJUS del 10 agosto 2026. |
+| `ambiti/17.html` | Fonte del riferimento alla prima stagione completa estate 2026, target 150.000 € / circa 1.500 paia e attivazione About You da aprile 2026. |
+| `index1.html` e `redblue.html` | In ciascuna versione alternativa: riquadro KPI di circa 50K€; caso `zfs` nello script con circa 400 paia, 50K€, quattro mesi e The Agent; pulsante del caso Zalando. |
+| `ambiti/10.html` e `ambiti/12.html` | Soli titoli nei collegamenti precedente/successivo all’ambito Zalando/About You, senza valori. |
+| `app.js` | Etichetta generica Marketplace; i valori sono letti da `data.js`, senza KPI autonomi. |
+
+Le descrizioni sono state allineate in homepage, dati della mappa, approfondimenti e versioni alternative, mantenendo i valori originari. Nei due approfondimenti le precisazioni editoriali e il confronto sono espliciti.
+
+**Dato mancante per il confronto:** rendiconto della sola estate 2026 riferito al perimetro originario Zalando ZFS, con incassi netti e paia vendute, date di inizio/fine e criterio di attribuzione stagionale, brand inclusi e trattamento omogeneo di IVA, resi, commissioni e logistica. Il repository non contiene rendiconti o transazioni dai quali ricostruirlo. Non è quindi possibile calcolare scostamento o percentuale di raggiungimento del target; la differenza aritmetica tra cumulato e obiettivo non sarebbe uno scostamento stagionale.
