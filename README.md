@@ -51,9 +51,21 @@ Verifiche eseguite: sintassi JavaScript, integrità di ancore e asset locali, 17
 
 Le 17 pagine in `ambiti/` riproducono tutti i paragrafi dei rispettivi ambiti del documento Contributo professionale. Le note editoriali sono separate dal testo originale. L'indice offre una sintesi espandibile e un collegamento Approfondisci sempre visibile; le pagine integrali funzionano senza JavaScript e includono ritorno alla sintesi e navigazione precedente/successivo.
 
-La classificazione riprende le tre macroaree della precedente versione del portfolio:
-- Generazione del valore: 01, 04, 08, 11.
-- Scalabilità e controllo: 06, 07, 09, 13, 14, 15.
-- Ciclo di ottimizzazione: 02, 03, 05, 10, 12, 16, 17.
+La struttura canonica è il Digital Business System:
+- 01 Generazione del valore: 01.01 Prodotto (ambiti 01–02), 01.02 Marketing (03–04), 01.03 Distribuzione (05–08).
+- 02 Scalabilità e controllo: 02.01 Operations (09–10), 02.02 Data & Controllo (11–12), 02.03 Infrastruttura (13–14), 02.04 Organizzazione (15–16).
+- 03 Ciclo di ottimizzazione: 03.01 Operating Loop, 03.02 Scale Drivers, 03.03 Ricerca & Sviluppo (17, meta-ambito trasversale).
 
-Verifica aggiuntiva: confronto di tutti i paragrafi con l'estrazione del documento; 18 pagine HTML con percorsi, ancore e ID validi; filtri 4/6/7 nodi; ritorno alla sintesi con apertura automatica; controllo visivo mobile e correzione dell'overflow della navigazione.
+I codici delle aree sono distinti dai numeri dei 17 ambiti. `data.js`, indice, connessioni della mappa, pagine integrali e navigazione precedente/successivo usano la stessa sequenza. I filtri restituiscono 8/8/1 ambiti. Le versioni grafiche alternative restano disponibili e rimandano all’indice canonico.
+
+Ricerca & Sviluppo distingue progettazione in corso, analisi svolte, test proposti, esplorazioni e implementazioni documentate. Nessuna proposta è trasformata in risultato.
+
+## Verifica della ristrutturazione
+
+Controllo congiunto dei due repository: 21 pagine HTML, 319 collegamenti e riferimenti locali/incrociati, assenza di ID duplicati, sequenza 01–17 e presenza delle dieci aree/componenti. Confronto testuale: conservati tutti i 163 paragrafi e note degli approfondimenti integrali e dei casi originari di Transformation. Verificata la sintassi di `data.js` e `app.js`.
+
+Verifica browser desktop e mobile: mappa e filtri, indice, apertura approfondimento e navigazione; nessuno scorrimento orizzontale rilevato nelle viste controllate. Non è un audit completo di accessibilità né un test su dispositivi fisici.
+
+## Pubblicazione coordinata
+
+Le modifiche sono preparate sul branch `codex/digital-business-system`. Pubblicare insieme alla ristrutturazione di `digital-commerce-transformation`: i collegamenti fra i siti adottano la medesima numerazione. Le URL numeriche degli ambiti cambiano significato con la rinumerazione; eventuali vecchi segnalibri esterni vanno aggiornati. Non sono mantenuti numeri precedenti nell’interfaccia.

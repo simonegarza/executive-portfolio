@@ -7,7 +7,7 @@
   const panel = document.querySelector('#node-detail');
   let selected = 1;
   let filter = 'Tutti';
-  const short = ['E-commerce','Buying','Strategia B2B','Performance media','Piano editoriale','Automazioni','Data & dashboard','Outlet / Veepee','Controllo economico','Hero product','Marketplace','Fotografia prodotto','Store locator','Logistica','Leadership','Impatto trasversale','Visione'];
+  const short = ["Buying", "Hero product", "Performance media", "Piano editoriale", "E-commerce", "Marketplace", "Strategia B2B", "Outlet / Veepee", "Fotografia prodotto", "Logistica", "Data & dashboard", "Controllo economico", "Automazioni", "Store locator", "Leadership", "Impatto trasversale", "Ricerca & Sviluppo"];
   const positions = [[12,12],[37,10],[63,12],[87,11],[23,32],[50,31],[77,32],[12,53],[37,53],[63,52],[87,53],[23,73],[50,73],[77,73],[12,91],[44,92],[82,92]];
   const pad = n => String(n).padStart(2,'0');
   data.forEach(d => {
@@ -15,7 +15,7 @@
     b.className = 'node'; b.id = `node-${d.id}`; b.dataset.id = d.id;
     b.setAttribute('aria-label', `${pad(d.id)} — ${d.title}`);
     b.setAttribute('aria-controls','node-detail');
-    b.innerHTML = `<small>${pad(d.id)} / AREA ${pad(d.macro)}</small>${short[d.id-1]}`;
+    b.innerHTML = `<small>${pad(d.id)} / ${d.area}</small>${short[d.id-1]}`;
     b.addEventListener('click', () => select(d.id)); nodes.append(b);
   });
   function layout() {
